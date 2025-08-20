@@ -1,0 +1,239 @@
+/* Styling for the whole website */ 
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 50px;
+    color: #F7FFE0;
+    font-family: 'Anton';
+    text-align: center;
+    }
+
+h2 {
+    font-size: 30px;
+    color: #F7FFE0;
+    font-family: 'Anton';
+    text-align: center;
+    }
+
+p {
+    font-size: 20px;
+    color: #F7FFE0;
+    font-family: 'Anton';
+    text-align: center;
+    }
+
+
+nav {
+    text-align: center;
+    position: sticky;
+    top: 0px; 
+    margin: 40px;
+    font-size: 20px;
+    font-family: 'Anton';
+    
+    background-color: rgba(0, 0, 0, 0.4);
+
+    backdrop-filter: blur(8px);
+
+    z-index: 10;
+}   
+
+a:visited {
+    color: #F7FFE0;
+}
+
+nav a:hover {
+    color: #9F7E69;
+    font-size: 30px;
+    transition: 0.5s; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* Styling for the index page only */
+.home { 
+        background: url('Images/image13.jpg') no-repeat center center fixed;
+        background-size: cover; 
+        background-attachment: fixed;
+      }
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+
+#page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100vh;
+    border: 20px;
+    }
+
+#page1, #page2, #page3 {
+    outline: 1px solid #F7FFE0;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    }
+
+
+#page1:hover {
+    height: 40vh;
+    transition: 0.5s;
+    backdrop-filter: contrast(150%);
+}
+
+#page2:hover {
+    height: 40vh;
+    transition: 0.5s;
+    backdrop-filter: contrast(150%);
+}
+
+#page3:hover {
+    height: 40vh;
+    transition: 0.5s;
+    backdrop-filter: contrast(150%);
+}
+
+
+/* Styling for the about page only */
+.about {
+    background: url('Images/image14.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    background-attachment: fixed;
+    }
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 20px;
+    }
+
+    
+    /* Styling for the projects page only */
+.projects { 
+    background: url('Images/image18.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+ .projects div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+/* Styling for the contact page only */
+.contact {
+    background: url('Images/image11.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    background-attachment: fixed; 
+    }   
+
+.social nav {
+    
+    background-color: transparent;
+    backdrop-filter: none;
+    font-size: 50px;
+    }
+
+.social nav a:hover {
+    font-size: 70px;
+    transition: 0.5s;
+    }
+
+.social a i {
+    color: #ffffff;
+}
+
+.social a:hover i {
+    font-size: 70px;
+    transition: 0.5s;
+}
+
+.email-icon:hover {
+    color: #0078d4;
+}
+
+
+.linkedin-icon:hover {
+    color: #0077b5; 
+}
+
+
+.discord-icon:hover {
+    color: #7289da; 
+}
+
+
+    /* palette de couleurs : 
+    #FFEEE2
+    #F7FFE0
+    #F2EFC7
+    #D2BBA0
+    #9F7E69 
+
+
+    ECFEAA
+    E2DE84
+    A6A670
+    86836D
+    626267
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #F7FFE0;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
